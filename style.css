@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: #131921;
+    --second-bg-color: #232f3e;
+    --third-bg-color: #e3e6e6;
+    --bottom-footer-bg-color: #131a22;
+    --back-to-top-bg-color: #37475a;
+    --search-button-bg-color: #febd69;
+    --input-outline-color: #e18710;
+    
+}
+body {
+    font-family: "Amazon Ember", Arial, sans-serif;
+}
+
+/* Utilities Class */
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+    font-size: 14px;
+}
+
+.fa-caret-down{
+    font-size: 14px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+/* Menu section */
+
+
+.top-menu{
+    color: white;
+    background-color: var(--main-bg-color);
+    justify-content: space-between;
+    padding: 6px;
+    gap:18px
+}
+.hover-border{ 
+    padding: 8px;
+}
+.hover-border:hover{
+    border: 1px solid white;
+}
+.top-menu span {  
+    font-size: 12px;
+}
+.logo img {
+    width: 100px;
+}
+.logo span{
+    padding-bottom: 10px;
+}
+.language img {
+    width: 20px;
+}
+#hello-span{
+    margin-left: 10px;
+}
+
+
+/* Search section  */
+
+.search{
+    flex-grow: 1;
+}
+
+.from-item{
+    background-color: white;
+    border-radius: 4px;
+}
+.search form label, .search form input, .search form button{
+    height:40px
+}
+.search form label {
+    background-color: var(--third-bg-color);
+    width: 50px;
+    text-align: center;
+    line-height: 40px;
+    color: black;
+    border-radius: 4px 0px 0px 4px;
+}
+.search form label:hover {
+    outline: 2px solid var(--input-outline-color);
+}
+
+.search form input {
+    width: 84%;
+    font-size: 15px;
+    padding-left: 8px;
+    border: none;
+}
+.search form input:focus {
+    outline: 2px solid var(--input-outline-color);
+}
+.search form button{
+    background-color: var(--search-button-bg-color);
+    width: 50px;
+    line-height: 40px;
+    color: black;
+    border-radius: 0px 4px 4px 0px;
+    border: none;
+    font-size: 15px;
+}
+.search form button:focus{
+    outline: 2px solid var(--input-outline-color);
+}
+.language{
+    height: 40px;
+    gap: 5px;
+}
+.cart span {
+    position: absolute;
+    color: #FF9900;
+    margin-left: 12px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.cart .fa-cart-shopping{
+    font-size: 2rem;
+}
+
+
