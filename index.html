@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon Clone</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Menu section -->
-    <div class="menu">
+    <div class="menu" id="topMenubar">
         <div class="top-menu flex">
             <a class="logo flex hover-border">
                 <img src="./assets/logo.png" alt="Amazon.logo">
                 <span>.in</span>
-                <!-- <a href="H">Amazon.in</a> -->
             </a>
             <div class="location hover-border">
                 <span id="hello-span">Hello</span>
-                <h4><i class="fa-solid fa-location-dot"></i> Select your address</h4>
+                <p class="menu-spacial-p"><i class="fa-solid fa-location-dot"></i> Select your address</p>
             </div>
             <div class="search">
                 <form action="#" class="flex from-item">
@@ -29,7 +30,7 @@
             </div>
             <div class="language hover-border flex">
                 <img src="assets/flag.png" alt="">
-                <h4>EN <i class="fa-solid fa-caret-down"></i></h4>
+                <p class="menu-spacial-p">EN <i class="fa-solid fa-caret-down"></i></p>
                 <!-- <select name="" id="">
                     <option value="EN">English-EN</option>
                     <option value="HI">हिन्दी - HI</option>
@@ -37,92 +38,545 @@
             </div>
             <div class="signin hover-border">
                 <span>Hello, sign in</span>
-                <h4>Accounts & Lists <i class="fa-solid fa-caret-down"></i></h4>
+                <p class="menu-spacial-p">Accounts & Lists <i class="fa-solid fa-caret-down"></i></p>
             </div>
             <div class="order hover-border">
                 <span>Returns</span>
-                <h4>& Orders <i class="fa-solid fa-caret-down"></i></h4>
+                <p class="menu-spacial-p">& Orders <i class="fa-solid fa-caret-down"></i></p>
             </div>
             <div class="cart hover-border">
                 <span>20</span>
-                <h4><i class="fa-solid fa-cart-shopping"></i> Cart</h4>
+                <p class="menu-spacial-p"><i class="fa-solid fa-cart-shopping"></i> Cart</p>
+            </div>
+        </div>
+        <div class="bottom-menu flex">
+            <div class="menu-left flex">
+                <a href="#" class="hover-border"><i class="fa-solid fa-bars"></i> All</a>
+                <a href="#" class="hover-border">Amazon miniTV</a>
+                <a href="#" class="hover-border">Sell</a>
+                <a href="#" class="hover-border">Best Sellers</a>
+                <a href="#" class="hover-border">Today's Deals</a>
+                <a href="#" class="hover-border">Mobiles</a>
+                <a href="#" class="hover-border">New Releases</a>
+                <a href="#" class="hover-border">Customer Service</a>
+                <a href="#" class="hover-border">Prime <i class="fa-solid fa-caret-down"></i></a>
+            </div>
+            <div class="menu-right hover-border flex">
+                <a href="#">New Launches from Mobiles, Electronics & more | Shop now</a>
             </div>
         </div>
     </div>
-    
+
     <!-- Heading-seaction -->
-    <section class="heading-section">
-        <div class="container">
-            
+    <section class="sliding-section">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <a href="#">
+                    <img src="./assets/pic1.jpg" class="slider-img" />
+                </a>
+            </div>
+
+            <div class="mySlides fade">
+                <a href="#">
+                    <img src="./assets/pic2.jpg" class="slider-img" />
+                </a>
+            </div>
+
+            <div class="mySlides fade">
+                <a href="#">
+                    <img src="./assets/pic3.png" class="slider-img" />
+                </a>
+            </div>
+            <div class="mySlides fade">
+                <a href="#">
+                    <img src="./assets/pic4.jpg" class="slider-img" />
+                </a>
+            </div>
+
+            <div class="mySlides fade">
+                <a href="#">
+                    <img src="./assets/pic5.jpg" class="slider-img" />
+                </a>
+            </div>
+
+            <div class="mySlides fade">
+                <a href="#">
+                    <img src="./assets/pic6.jpg" class="slider-img" />
+                </a>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-angle-left"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-angle-right"></i></a>
+        </div>
+        <div class="shoping-section flex">
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-heading">Bluetooth Calling Smartwatch starts at...</h2>
+                    <div class="card-single-image">
+                        <img src="./assets/product1.jpg" alt="Product watch">
+                    </div>
+                    <a href="#" class="link-color">Shop Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-heading">Up to 60% off | Styles for men</h2>
+                    <div class="card-multiple-image flex">
+                        <div class="card-grid-img flex">
+                            <a href="#">
+                                <img src="./assets/product2.jpg" alt="Product watch">
+                                <span>Clothing</span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img flex">
+                            <a href="#">
+                                <img src="./assets/product3.jpg" alt="Product watch">
+                                <span>Footwear</span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img margin-top">
+                            <a href="#">
+                                <img src="./assets/product4.jpg" alt="Product watch">
+                                <span>Watches</span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img margin-top">
+                            <a href="#">
+                                <img src="./assets/product5.jpg" alt="Product watch">
+                                <span>Bags & Luggage</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="link-color">See all offers</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-heading">Revamp your home in style</h2>
+                    <div class="card-multiple-image flex">
+                        <div class="card-grid-img">
+                            <a href="#">
+                                <img src="./assets/product6.jpg" alt="Product watch">
+                                <span>Bedsheets, curtain </span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img">
+                            <a href="#">
+                                <img src="./assets/product7.jpg" alt="Product watch">
+                                <span>Home decoration</span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img margin-top">
+                            <a href="#">
+                                <img src="./assets/product8.jpg" alt="Product watch">
+                                <span>Home storage</span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img margin-top">
+                            <a href="#">
+                                <img src="./assets/product9.jpg" alt="Product watch">
+                                <span>Lighting solutions</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="link-color">Explore all</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-heading">Up to 60% off | Styles for women</h2>
+                    <div class="card-multiple-image flex">
+                        <div class="card-grid-img">
+                            <a href="#">
+                                <img src="./assets/product10.jpg" alt="Product watch">
+                                <span>Women's Clothing </span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img">
+                            <a href="#">
+                                <img src="./assets/product11.jpg" alt="Product watch">
+                                <span>Footwear+Handpags</span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img margin-top">
+                            <a href="#">
+                                <img src="./assets/product12.jpg" alt="Product watch">
+                                <span>Watches</span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img margin-top">
+                            <a href="#">
+                                <img src="./assets/product13.jpg" alt="Product watch">
+                                <span>Fashion jewellery</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="link-color">See all offers</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-heading">Appliances for your home | Up to 55% off</h2>
+                    <div class="card-multiple-image flex">
+                        <div class="card-grid-img">
+                            <a href="#">
+                                <img src="./assets/product14.jpg" alt="Product watch">
+                                <span>Air conditioners </span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img">
+                            <a href="#">
+                                <img src="./assets/product15.jpg" alt="Product watch">
+                                <span>Refrigerators</span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img margin-top">
+                            <a href="#">
+                                <img src="./assets/product16.jpg" alt="Product watch">
+                                <span>Microwaves</span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img margin-top">
+                            <a href="#">
+                                <img src="./assets/product9.jpg" alt="Product watch">
+                                <span>Washing machines</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="link-color">See more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-heading">Automotive essentials | Up to 60% off</h2>
+                    <div class="card-multiple-image flex">
+                        <div class="card-grid-img">
+                            <a href="#">
+                                <img src="./assets/product17.jpg" alt="Product watch">
+                                <span>Cleaning accessories </span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img">
+                            <a href="#">
+                                <img src="./assets/product18.jpg" alt="Product watch">
+                                <span>Tyre & rim care</span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img margin-top">
+                            <a href="#">
+                                <img src="./assets/product19.jpg" alt="Product watch">
+                                <span>Helmets</span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img margin-top">
+                            <a href="#">
+                                <img src="./assets/product20.jpg" alt="Product watch">
+                                <span>Vacuum Cleaner</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="link-color">See more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-heading">Starting ₹99 | All your home improvement...</h2>
+                    <div class="card-multiple-image flex">
+                        <div class="card-grid-img">
+                            <a href="#">
+                                <img src="./assets/product22.jpg" alt="Product watch">
+                                <span>Spin mops, wipes... </span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img">
+                            <a href="#">
+                                <img src="./assets/product23.jpg" alt="Product watch">
+                                <span>Bathromm hardware...</span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img margin-top">
+                            <a href="#">
+                                <img src="./assets/product24.jpg" alt="Product watch">
+                                <span>Hammers & more</span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img margin-top">
+                            <a href="#">
+                                <img src="./assets/product25.jpg" alt="Product watch">
+                                <span>Extension boards...</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="link-color">Explore all</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h2 class="card-heading">Revamp your home in style</h2>
+                    <div class="card-multiple-image flex">
+                        <div class="card-grid-img">
+                            <a href="#">
+                                <img src="./assets/product6.jpg" alt="Product watch">
+                                <span>Bedsheets, curtain </span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img">
+                            <a href="#">
+                                <img src="./assets/product7.jpg" alt="Product watch">
+                                <span>Home decoration</span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img margin-top">
+                            <a href="#">
+                                <img src="./assets/product8.jpg" alt="Product watch">
+                                <span>Home storage</span>
+                            </a>
+                        </div>
+                        <div class="card-grid-img margin-top">
+                            <a href="#">
+                                <img src="./assets/product9.jpg" alt="Product watch">
+                                <span>Lighting solutions</span>
+                            </a>
+                        </div>
+                    </div>
+                    <a href="#" class="link-color">Explore all</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Todays-deals section -->
-    <section class="todays-deals-section">
-        <div class="container">
 
+    <div class="container">
+        <div class="shopping-pannel">
+            <div class="shopping-pannel-heading flex">
+                <h2>Today's Deals</h2>
+                <a href="#" class="link-color">See all Deals</a>
+            </div>
+            <div class="card-pannel flex">
+                <a href="#">
+                    <div class="card-pannel-content">
+                        <img src="./assets/product26.jpg" alt="">
+                    </div>
+                    <div class="deal-of-the-day">
+                        <span class="deal-discount-btn">13% off</span>
+                        <span class="deal-span">Deal of the Day</span>
+                    </div>
+                    <div class="deal-price">
+                        <span class="deal-price-part">₹34, 999.00</span>
+                        <span class="deal-mrp">M.R.P.</span>
+                        <span class="deal-mrp-price">: ₹39, 999.00</span>
+                    </div>
+                    <div class="deal-message">
+                        <span>iQOO Neo 7 Pro</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card-pannel-content">
+                        <img src="./assets/product27.jpg" alt="">
+                    </div>
+                    <div class="deal-of-the-day">
+                        <span class="deal-discount-btn">Up to 60% off</span>
+                        <span class="deal-span">Deal of the Day</span>
+                    </div>
+                    <div class="deal-price">
+                        <span class="deal-price-part"></span>
+                        <span class="deal-mrp"></span>
+                        <span class="deal-mrp-price"></span>
+                    </div>
+                    <div class="deal-message">
+                        <span>New Launch- Realme Air 5 Pro-50dB</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card-pannel-content">
+                        <img src="./assets/product28.jpg" alt="">
+                    </div>
+                    <div class="deal-of-the-day">
+                        <span class="deal-discount-btn">Up to 60% off</span>
+                        <span class="deal-span">Deal of the Day</span>
+                    </div>
+                    <div class="deal-price">
+                        <span class="deal-price-part"></span>
+                        <span class="deal-mrp"></span>
+                        <span class="deal-mrp-price"></span>
+                    </div>
+                    <div class="deal-message">
+                        <span>New Launch- Realme Air 5 Pro-50dB</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card-pannel-content">
+                        <img src="./assets/product29.jpg" alt="">
+                    </div>
+                    <div class="deal-of-the-day">
+                        <span class="deal-discount-btn">Up to 46% off</span>
+                        <span class="deal-span">Deal of the Day</span>
+                    </div>
+                    <div class="deal-price">
+                        <span class="deal-price-part"></span>
+                        <span class="deal-mrp"></span>
+                        <span class="deal-mrp-price"></span>
+                    </div>
+                    <div class="deal-message">
+                        <span>New Launch- Realme Air 5 Pro-50dB</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card-pannel-content">
+                        <img src="./assets/product30.jpg" alt="">
+                    </div>
+                    <div class="deal-of-the-day">
+                        <span class="deal-discount-btn">Up to 50% off</span>
+                        <span class="deal-span">Deal of the Day</span>
+                    </div>
+                    <div class="deal-price">
+                        <span class="deal-price-part"></span>
+                        <span class="deal-mrp"></span>
+                        <span class="deal-mrp-price"></span>
+                    </div>
+                    <div class="deal-message">
+                        <span>New Launch- Realme Air 5 Pro-50dB</span>
+                    </div>
+                </a>
+            </div>
         </div>
-    </section>
-
-    <!-- Bestsellers section -->
-    <section class="best-seller-section">
-        <div class="container">
-
-        </div>
-    </section>
-    
-    <!-- Bestsellers section -->
-    <section class="best-seller-section">
-        <div class="container">
-
-        </div>
-    </section>
-    
-    <!-- Card section -->
-    <section class="card-section">
-        <div class="container">
-
-        </div>
-    </section>
-    
-    <!-- Discount section -->
-    <section class="discount-section">
-        <div class="container">
-
-        </div>
-    </section>
-    
-    <!-- Some simmilar section come Here -->
+    </div>
 
     <!-- back-to-top section -->
-    <section class="back-to-top-section">
-        <div class="container">
-
-        </div>
+    <section class="back-to-top-section flex">
+        <span> <a href="#topMenubar">Back to Top</a></span>
     </section>
+
     <footer>
-
-        <!-- Top Footer -->
-        <section class="top-footer-section">
-            <div class="container">
-    
+        <div class="footer-list flex">
+            <div class="list flex">
+                <h3>Get to Know Us</h3>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Press Releases</a>
+                <a href="#"> Science</a>
             </div>
-        </section>
-
-        <!-- Mid Footer -->
-        <section class="mid-footer-section">
-            <div class="container">
-    
+            <div class="list flex">
+                <h3>Connect with Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
             </div>
-        </section>
-
-        <!-- Bottom Footer -->
-        <section class="bottom-footer-section">
-            <div class="container">
-    
+            <div class="list flex">
+                <h3>Make Money with Us</h3>
+                <a href="#">Sell on Amazon</a>
+                <a href="#">Sell under Amazon Accelerator</a>
+                <a href="#">Protect and Build Your Brand</a>
+                <a href="#"> Amazon Global Selling</a>
+                <a href="#"> Become an Affiliate</a>
+                <a href="#"> Fulfilment by Amazon</a>
+                <a href="#"> Advertise Your Products</a>
+                <a href="#"> Amazon Pay on Merchants</a>
             </div>
-        </section>
+            <div class="list flex">
+                <h3>Let Us Help You</h3>
+                <a href="#">COVID-19 and Amazon</a>
+                <a href="#">Your Account</a>
+                <a href="#">Returns Centre</a>
+                <a href="#"> 100% Purchase Protection</a>
+                <a href="#"> Amazon App Download</a>
+                <a href="#"> Help</a>
+            </div>
+        </div>
+        <div class="border-line"></div>
+        <div class="footer-logo flex">
+            <a class="logo flex footer-logo-center">
+                <img src="./assets/logo.png" alt="Amazon.logo">
+            </a>
+            <div class="footer-language flex">
+                <i class="fa-solid fa-globe"></i>
+                <span>English</span>
+                <div class="caret-up-down flex">
+                    <i class="fa-solid fa-caret-up"></i>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="country flex">
+            <a href="#">Australia</a>
+            <a href="#">Brazil</a>
+            <a href="#">Canada</a>
+            <a href="#">China</a>
+            <a href="#">France</a>
+            <a href="#">Germany</a>
+            <a href="#">Italy</a>
+            <a href="#">Japan</a>
+            <a href="#">Mexico</a>
+            <a href="#">Netherlands</a>
+            <a href="#">Poland</a>
+            <a href="#">Singapore</a>
+            <a href="#">Spain</a>
+            <a href="#">Turkey</a>
+            <a href="#">United Arab Emirates</a>
+            <a href="#">United Kingdom</a>
+            <a href="#">United States</a>
+        </div>
+
+        <div class="copyright-container">
+            <div class="services flex">
+                <a href="#">AbeBooks
+                    <br /> <span>Books, art</span>
+                    <br /> <span>& collectibles</span>
+                </a>
+                <a href="#">Amazon Web Services
+                    <br /> <span>Scalable Cloud</span>
+                    <br /> <span>Computing Services</span>
+                </a>
+                <a href="#">Audible
+                    <br /> <span>Download</span>
+                    <br /> <span>Audio Books</span>
+                </a>
+                <a href="#">DPReview
+                    <br /> <span>Digital</span>
+                    <br /> <span>Photography</span>
+                </a>
+                <a href="#">IMDb
+                    <br /> <span>Movies, TV</span>
+                    <br /> <span>& Celebrities</span>
+                </a>
+                <a href="#">Shopbop
+                    <br /> <span>Designer</span>
+                    <br /> <span>Fashion Brands</span>
+                </a>
+                <a href="#">Amazon Business
+                    <br /> <span>Everything For</span>
+                    <br /> <span></span>Your Business</span>
+                </a>
+                <a href="#">Prime Now
+                    <br /> <span>2-Hour Delivery</span>
+                    <br /> <span>on Everyday Items</span>
+                </a>
+                <a href="#">Amazon Prime Music
+                    <br /> <span>100 million songs, ad-free</span>
+                    <br /> <span>Over 15 million podcast episodes</span>
+                </a>
+
+            </div>
+            <div class="copyright">
+                <div class="condition">
+                    <a href="#"> Conditions of Use & Sale</a>
+                    <a href="#"> Privacy Notice</a>
+                    <a href="#"> Interest-Based Ads</a>
+                </div>
+                <div class="amazon-rights">
+                    <span>© 1996-2023, Amazon.com, Inc. or its affiliates</span>
+                </div>
+            </div>
+        </div>
     </footer>
+    <script src="index.js"></script>
     <script src="https://kit.fontawesome.com/03bc89746d.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
